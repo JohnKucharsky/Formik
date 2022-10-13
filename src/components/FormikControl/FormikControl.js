@@ -1,4 +1,4 @@
-import { FormControl } from "@chakra-ui/react";
+import { FormControl, FormErrorMessage } from "@chakra-ui/react";
 import { ErrorMessage, Field } from "formik";
 import { Fragment } from "react";
 import DateView from "react-datepicker";
@@ -19,6 +19,7 @@ function ChakraInput(props) {
                             {...rest}
                             {...field}
                         />
+                        <FormErrorMessage>{form.errors[name]}</FormErrorMessage>
                     </FormControl>
                 );
             }}

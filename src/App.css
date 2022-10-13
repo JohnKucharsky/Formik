@@ -29,5 +29,14 @@ input[type='email'],textarea{
 .error{
 color: red;
 }
+nav{
+  display: flex;
+  gap:1rem;
 
+}
+
+nav a {
+  border: 1px solid blue;
+  padding: .3rem 1rem;
+}
 
